@@ -33,6 +33,10 @@ input:not([type="radio"]):not([type="checkbox"]), button{
 body {
     background: var(--light);
     color: var(--dark);
+} 
+
+.background {
+    background-image: url("pinkocean2.jpg");
 }
 
 section {

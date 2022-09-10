@@ -44,6 +44,33 @@ function DisplayTodos () {
 
         const label = document.createElement('label');
         const input = document.createElement('input');
+        const span = document.createElement('span');
+        const content = document.createElement('div');
+        const actions = document.createElement('div');
+        const edit = document.createElement('button');
+        const deleteButton = document.createElement('button');
+
+        input.type = 'checkbox';
+        input.checked = todo.done;
+        span.classList.add('bubble');
+
+        if (todo.category == 'self-care') {
+            span.classList.add('self-care');
+        } else {
+            span.classList.add('self-care');
+        }
+
+        content.classList.add('todo-content');
+        actions.classList.add('actions');
+        edit.classList.add('edit');
+        deleteButton.classList.add('delete');
+
+        content.innerHTML = `<input type="text" value="${todo.content}"readonly>`;
+        edit.innerHTML = 'Edit';
+
+
+ 
+
 
 
     })
