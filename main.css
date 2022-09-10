@@ -1,0 +1,43 @@
+:root {
+    --primary: #EA40A4;
+    --work:#ee8b3a;
+    --selfcare: var(--primary);
+    --light: #eee;
+    --dark: #313153;
+    --danger: #eb0f0b;
+
+    --shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+    --work-glow: 0px 0px 4px rgba(238, 139, 58, 0.75);
+    --selfcare-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald' sans-serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
+
+body {
+    background: var(--light);
+    color: var(--dark);
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
