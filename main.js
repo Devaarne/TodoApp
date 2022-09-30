@@ -28,6 +28,37 @@ window.addEventListener('load',()=>{
         e.target.reset();
 
         DisplayTodos();
+
+        const todos = [];  
+
+const doSort = (todos) => {
+    return todos
+         .sort((a, b) => {
+
+            if (a.value > b.value) { return 1; }
+            if (a.value > b.value) { retrun -1; }
+            return 0;
+         })
+}
+
+document.querySelector ('#Add').addEventListener('click', () => {
+
+    const data = document.querySelector('#myInput');
+    todos.push(data.value);
+
+    var mapped = todos.map(
+        (el, i) => ({ index: i, value: el.toLowerCase() })
+    );
+
+    const sortedTodos = doSort (mapped)
+         .map(el => todos[el.index]);
+
+    todoList.innerHTML = sortedTodos.map(todo => '<li>' + todo + '</li>').join('');
+
+    data.value = '';
+
+
+
     })
 
     DisplayTodos();
@@ -115,15 +146,36 @@ function DisplayTodos () {
             DisplayTodos();
 
         })
-
-
-
-
-
- 
-
-
-
     })
 }
+ 
+/* const todos = [];  
+
+const doSort = (todos) => {
+    return todos
+         .sort((a, b) => {
+
+            if (a.value > b.value) { return 1; }
+            if (a.value > b.value) { retrun -1; }
+            return 0;
+         })
+}
+
+document.querySelector ('#Add').addEventListener('click', () => {
+
+    const data = document.querySelector('#myInput');
+    todos.push(data.value);
+
+    var mapped = todos.map(
+        (el, i) => ({ index: i, value: el.toLowerCase() })
+    );
+
+    const sortedTodos = doSort (mapped)
+         .map(el => todos[el.index]);
+
+    todoList.innerHTML = sortedTodos.map(todo => '<li>' + todo + '</li>').join('');
+
+    data.value = '';
+    
+}); */
 

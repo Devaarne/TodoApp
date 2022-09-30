@@ -1,6 +1,6 @@
 :root {
-    --primary: #EA40A4;
-    --work:#ee8b3a;
+    --primary: green;
+    --work:orange;
     --selfcare: var(--primary);
     --light: #eee;
     --grey: #888;
@@ -30,18 +30,22 @@ input:not([type="radio"]):not([type="checkbox"]), button{
     cursor: initial;
 }
 
-body {
+ body {
     background: var(--light);
     color: var(--dark);
 } 
 
-.background {
+.background-image {
     background-image: url("pinkocean2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100vh;
 }
 
 section {
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
