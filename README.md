@@ -1,2 +1,3 @@
 # TodoApp
 A simple app for daily organisation
+Add name to the top line for a personalised greeting heading. In the first bubble, user is able to type a task - to submit, user must select the 'self care' or 'work' button and select the 'add to-do' button. Tasks will display as a list and are ordered alphebetically when the page is refreshed. User can edit or delete using the respecctive buttons on the right side of each list entry. 
