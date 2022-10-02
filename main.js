@@ -119,8 +119,9 @@ function DisplayTodos () {
         })
     })
 }
- 
-/* const todos = [];  
+
+
+const todos = [];  
 
 const doSort = (todos) => {
     return todos
@@ -134,7 +135,7 @@ const doSort = (todos) => {
 
 document.querySelector ('#Add').addEventListener('click', () => {
 
-    const data = document.querySelector('#myInput');
+    const data = document.querySelector('#Input');
     todos.push(data.value);
 
     var mapped = todos.map(
@@ -148,5 +149,4 @@ document.querySelector ('#Add').addEventListener('click', () => {
 
     data.value = '';
     
-}); */
-
+})
