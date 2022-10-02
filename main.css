@@ -1,20 +1,22 @@
+
+/* Variables */
 :root {
     --primary: green;
     --work:orange;
-    --selfcare: var(--primary);
+    --selfcare: green;
     --light: #eee;
     --grey: #888;
-    --dark: #313153;
+    --dark: #313153; 
     --danger: #eb0f0b;
 
     --shadow: 0 1px 3px rgba(0,0,0,0.1);
 
     --work-glow: 0px 0px 4px rgba(238, 139, 58, 0.75);
     --selfcare-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
-
-
 }
+/* End of Variables */
 
+/* Resets */
 * {
     margin: 0;
     padding: 0;
@@ -29,8 +31,9 @@ input:not([type="radio"]):not([type="checkbox"]), button{
     background: none;
     cursor: initial;
 }
+/* End of resets */
 
- body {
+body {
     background: var(--light);
     color: var(--dark);
 } 

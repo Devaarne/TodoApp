@@ -5,32 +5,34 @@
     <meta http-equiv="X-UA-Compatibile" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do App updated version 2.0</title>
+    <!-- adding google loaded fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <!-- end of fonts -->
 
-
-
+    <!-- CSS Import --> 
     <link rel="stylesheet" href="main.css"/>
+    <!-- End of CSS Import-->
+
 </head>
-
 <body>
-
-<!--    <div class="background-image"></div> -->
     
+    <!-- Wrapping app-->    
     <main class="app">
         
+        <!-- Greeting -->  
         <section class="greeting">
             <h2 class="title">
                 Welcome to your daily organizer, <input type="text" id="name" placeholder=" Name here">
             </h2>
         </section>
+        <!-- End of greeting -->
 
-   
 
+        <!-- New Todo task -->
         <section class="create-todo">
             <h3>Create your To-do list:</h3>
-
             <form id="new-todo-form">
                 <h4> What needs to be completed today? Please enter task below.</h4>
                 <input 
@@ -41,7 +43,6 @@
 
                 <h4>Pick a category</h4>
                 <div class="options">
-
                     <label>
                         <input 
                             type="radio" 
@@ -51,7 +52,6 @@
                         <span class="bubble selfcare"></span>
                         <div>Self Care</div>
                     </label>
-
                     <label>
                         <input 
                             type="radio" 
@@ -65,16 +65,15 @@
                 </div>
 
                 <input type="submit" value="Add To-do"/>
-
             </form>
-
-        </section> 
-
-
+        </section>
+        <!-- End of New Todo task -->
+        
+        <!-- Todo List -->
         <section class="todo-list">
             <h3>To-Do List</h3>
-            <div class="list" id="todo-list">
-    <!--           <div class="todo-item done">
+            <div class="list" id="todo-list"></div>
+           <!-- <div class="todo-item done">
                     <label>
                         <input type="checkbox"/>
                         <span class="bubble selfcare"></span>
@@ -104,19 +103,15 @@
                         <button class="edit">Edit</button>
                         <button class="delete">Delete</button>
                     </div>
-
-
                 </div> -->
-            </div>
         </section>
-
-
-         
+        <!-- End of Todo List -->
     </main>
+    <!-- End of App Wrapper -->
+
+    <!--JS Import-->
     <script src="main.js"></script>
-
-
-
+    <!--End of JS Import-->
 
 </body>
 </html>
